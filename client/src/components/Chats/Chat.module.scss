@@ -1,0 +1,134 @@
+.chat_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  // gap: 0.3rem;
+  padding-bottom: 0.5rem;
+  .chat_details {
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    height: 4.5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .circle {
+      width: 3.3rem;
+      height: 3.3rem;
+      border: 2px solid var(--dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-size: 1.5rem;
+        color: var(--text);
+        text-transform: uppercase;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      color: var(--text);
+      line-height: 1rem;
+      text-transform: capitalize;
+      span {
+        color: var(--dark);
+        font-size: 0.7rem;
+        text-transform: uppercase;
+      }
+    }
+    .right {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 0.3rem;
+      p {
+        font-size: 0.8rem;
+      }
+      button {
+        font-size: 0.8rem;
+        width: fit-content;
+        background-color: transparent;
+        border-color: var(--active);
+        padding: 0.2rem;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+  .chats {
+    width: 100%;
+    height: calc(100% - 9rem);
+    overflow-y: scroll;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    .loading {
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 2rem 0;
+      color: var(--active);
+    }
+    &::-webkit-scrollbar {
+      width: 0.4rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--secondary);
+    }
+    &::-webkit-scrollbar-track {
+      background-color: var(--dark);
+    }
+  }
+  .reply_actions {
+    width: 100%;
+    // border: 1px solid var(--active);
+    height: 3rem;
+    display: flex;
+    .left,
+    .right,
+    .middle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .left {
+      width: 10rem;
+      padding: 0 1rem;
+      span {
+        font-size: 1.1rem;
+        color: var(--dark);
+      }
+    }
+    .middle {
+      flex: 1;
+      padding: 0 0.3rem;
+      input {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .right {
+      width: 6rem;
+      padding: 0 0.3rem;
+      button {
+        height: 100%;
+        padding: 0 1rem;
+        background-color: transparent;
+        &:hover {
+          border: none;
+          .icon {
+            scale: 1.1;
+            color: var(--active);
+          }
+        }
+        .icon {
+          font-size: 2rem;
+          color: var(--text);
+        }
+      }
+    }
+  }
+}

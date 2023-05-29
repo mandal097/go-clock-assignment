@@ -1,0 +1,15 @@
+.default_chat{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .icon{
+        font-size: 10rem;
+        color: var(--active);
+    }
+    p{
+        font-size: 1.3rem;
+        color: var(--dark);
+    }
+}

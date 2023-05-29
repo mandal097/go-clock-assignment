@@ -1,0 +1,37 @@
+.message {
+  height: auto;
+  width: 45%;
+  margin: 1rem 0;
+  position: relative;
+  .wrapper {
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: var(--active);
+    border-radius: 0.3rem;
+    p {
+      font-size: 1rem;
+      color: var(--text);
+    }
+  }
+  .time {
+    left: 1.5rem;
+    bottom: -1.4rem;
+    font-size: 0.8rem;
+    color: var(--dark);
+  }
+}
+
+.own {
+  margin-left: auto;
+  .wrapper {
+    margin-left: auto;
+  }
+  .own_time {
+    right: 1.5rem;
+    bottom: -1.4rem;
+    font-size: 0.8rem;
+    color: var(--dark);
+    display: flex;
+    justify-content: end;
+  }
+}

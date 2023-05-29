@@ -1,0 +1,44 @@
+button {
+  font-size: 1.1rem;
+  border: none;
+  color: var(--btnText);
+  cursor: pointer;
+  background-color: var(--active);
+  border: 1px solid var(--primary);
+  &:hover {
+    background-color: transparent;
+    border-color: var(--active);
+  }
+}
+
+input,
+select {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  outline: none;
+  color: var(--text);
+  border-radius: 0.3rem;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+select {
+  font-size: 1rem;
+  option {
+    background: var(--secondary);
+    font-size: 1rem;
+    padding: 0.5rem;
+    &:checked{
+     background-color: var(--primary);
+    }
+  }
+}
+
+
+.toaster {
+  font-size: 50px;
+}
