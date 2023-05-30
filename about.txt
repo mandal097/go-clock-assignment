@@ -1,0 +1,43 @@
+Go Clock Assignment
+
+## Installation 
+
+Step 1: Clone the repository from git (backend and frontend)
+                -> git clone https://github.com/mandal097/go-clock-assignment.git
+                -> cd go-clock-assignment
+
+Step 2: Setup node server:
+                -> Get into server folder - cd server
+                -> Install node packages with command - npm install
+                -> Start the server with command - npm start
+                -> The server will start on port number on 5000
+
+Step 3: Set up client react app:
+                -> Get into client folder - cd client
+                -> Install node packages with command - npm install
+                -> Start the server with command - npm start
+                -> The  react app will start on http://localhost:3000
+
+
+## Usage
+1.This app has 3 screen 
+                -> 1st one is landing page where user can register a manufacturer or a transporter .
+                -> If user have already a account, who can simply login using their email and password.
+                -> 2nd screen is for login and register .
+                -> 3rd one is last and all the features are implemented there.
+                        
+
+## For better Dashboard testing purpose
+
+1.Login with Manufacturer credentials (email:m1@gmail.com, password:1234567890);
+2.Login with Transporter credentials (email:t1@gmail.com, password:1234567890);
+
+
+
+## CONTACT
+Name: Amarnath kumar mandal
+Github : https://github.com/mandal097
+Email : amarnathkumar097.ak@gmail.com
+
+
+

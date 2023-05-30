@@ -20,7 +20,7 @@ const Chat = () => {
 
     const inputFocus = () => {
         inputRef.current.focus();
-        setPlaceholder('Enter yout price (in ₹)')
+        setPlaceholder('Enter your price (in ₹)')
         setPriceFlag('Price : ₹ ')
         inputRef.current.style.border = '1.5px solid var(--textSoft)'
     }
